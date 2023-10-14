@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="editor">
+      <UniqueIdentifier>{AC2EC5FA-98D0-EFD0-818B-03256DCC7621}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="editor\src">
+      <UniqueIdentifier>{C362F021-AF1A-326F-1822-0BCB04F9CC5F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{2DAB880B-99B4-887C-2230-9F7C8E38947C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core">
+      <UniqueIdentifier>{C55F2ECF-B12C-89DA-DA45-7782C671BE68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core\ecs">
+      <UniqueIdentifier>{EF3A4E7B-DB9D-DD1F-8423-16D67065A9A2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core\graphics">
+      <UniqueIdentifier>{C551196E-3168-1704-7ADF-A225E634E88B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core\helper">
+      <UniqueIdentifier>{B4C60088-2052-6E4C-2963-F140956DCA4C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core\internals">
+      <UniqueIdentifier>{4486D606-306A-975C-99CA-91AF85CD81DE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core\internals\app">
+      <UniqueIdentifier>{947993FF-8073-BC51-69E0-5262557922BE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core\internals\assets">
+      <UniqueIdentifier>{C6AC977D-326F-CB07-7B1F-5A94E720A4E5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core\internals\input">
+      <UniqueIdentifier>{63E9E732-4F0E-37B3-7859-1C4364DD35D1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core\vector">
+      <UniqueIdentifier>{6722A4A8-D3AD-116D-DCBE-946148C96D6D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\thirdparty">
+      <UniqueIdentifier>{0742E1B3-F30F-D5B9-DCA3-45E0C810B11E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\core\ecs\Components.h">
+      <Filter>src\core\ecs</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\ecs\ecs.h">
+      <Filter>src\core\ecs</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\graphics\Material.h">
+      <Filter>src\core\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\graphics\Mesh.h">
+      <Filter>src\core\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\graphics\Renderer.h">
+      <Filter>src\core\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\graphics\Vertex.h">
+      <Filter>src\core\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\helper\errorhelper.h">
+      <Filter>src\core\helper</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\internals\app\Application.h">
+      <Filter>src\core\internals\app</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\internals\app\EventHandler.h">
+      <Filter>src\core\internals\app</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\internals\app\ImGuiInterface.h">
+      <Filter>src\core\internals\app</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\internals\assets\AssetManager.h">
+      <Filter>src\core\internals\assets</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\internals\assets\MeshImporter.h">
+      <Filter>src\core\internals\assets</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\internals\input\input.h">
+      <Filter>src\core\internals\input</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\vector\Vector2.h">
+      <Filter>src\core\vector</Filter>
+    </ClInclude>
+    <ClInclude Include="src\thirdparty\stb_image.h">
+      <Filter>src\thirdparty</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="editor\src\entry_point.cpp">
+      <Filter>editor\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{2DAB880B-99B4-887C-2230-9F7C8E38947C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core">
+      <UniqueIdentifier>{C55F2ECF-B12C-89DA-DA45-7782C671BE68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core\ecs">
+      <UniqueIdentifier>{EF3A4E7B-DB9D-DD1F-8423-16D67065A9A2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core\graphics">
+      <UniqueIdentifier>{C551196E-3168-1704-7ADF-A225E634E88B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core\helper">
+      <UniqueIdentifier>{B4C60088-2052-6E4C-2963-F140956DCA4C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core\internals">
+      <UniqueIdentifier>{4486D606-306A-975C-99CA-91AF85CD81DE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core\internals\app">
+      <UniqueIdentifier>{947993FF-8073-BC51-69E0-5262557922BE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core\internals\assets">
+      <UniqueIdentifier>{C6AC977D-326F-CB07-7B1F-5A94E720A4E5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core\internals\input">
+      <UniqueIdentifier>{63E9E732-4F0E-37B3-7859-1C4364DD35D1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core\vector">
+      <UniqueIdentifier>{6722A4A8-D3AD-116D-DCBE-946148C96D6D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\thirdparty">
+      <UniqueIdentifier>{0742E1B3-F30F-D5B9-DCA3-45E0C810B11E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third-party">
+      <UniqueIdentifier>{9DC1EB7C-0977-6472-926B-5E49FE1F5B76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third-party\dear_imgui">
+      <UniqueIdentifier>{825594E9-6E4F-BD3B-57BC-534C435523A8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third-party\dear_imgui\backends">
+      <UniqueIdentifier>{EC21376D-5805-46AD-6108-74E9CD6A0CFE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third-party\dear_imgui\misc">
+      <UniqueIdentifier>{9D29607F-0937-8E65-921D-8A50FE295A1C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third-party\dear_imgui\misc\cpp">
+      <UniqueIdentifier>{EF298120-5B0D-9060-6410-BE9CD07256B1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third-party\glad">
+      <UniqueIdentifier>{C41E33ED-B017-523F-D949-37C4C5A1314B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third-party\glad\src">
+      <UniqueIdentifier>{DB9E887B-C72D-1245-704C-26405CBA22EB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third-party\glm">
+      <UniqueIdentifier>{6CD218AA-D85D-866E-E16E-09634D79E26E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third-party\glm\glm">
+      <UniqueIdentifier>{BBB2EFD5-2714-CDE3-B081-13961CE203A3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third-party\glm\glm\glm">
+      <UniqueIdentifier>{8A22CCD7-F659-146F-FF63-78926B1A3B68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third-party\glm\glm\glm\detail">
+      <UniqueIdentifier>{0C9BA8C6-F8C0-722D-E106-F8F8CDCB97F9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\core\ecs\Components.h">
+      <Filter>src\core\ecs</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\ecs\ecs.h">
+      <Filter>src\core\ecs</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\graphics\Material.h">
+      <Filter>src\core\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\graphics\Mesh.h">
+      <Filter>src\core\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\graphics\Renderer.h">
+      <Filter>src\core\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\graphics\Vertex.h">
+      <Filter>src\core\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\helper\errorhelper.h">
+      <Filter>src\core\helper</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\internals\app\Application.h">
+      <Filter>src\core\internals\app</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\internals\app\EventHandler.h">
+      <Filter>src\core\internals\app</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\internals\app\ImGuiInterface.h">
+      <Filter>src\core\internals\app</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\internals\assets\AssetManager.h">
+      <Filter>src\core\internals\assets</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\internals\assets\MeshImporter.h">
+      <Filter>src\core\internals\assets</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\internals\input\input.h">
+      <Filter>src\core\internals\input</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\vector\Vector2.h">
+      <Filter>src\core\vector</Filter>
+    </ClInclude>
+    <ClInclude Include="src\thirdparty\stb_image.h">
+      <Filter>src\thirdparty</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\internals\app\Window.h" />
+    <ClInclude Include="src\core\graphics\DeferredRenderer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\core\ecs\ecs.cpp">
+      <Filter>src\core\ecs</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\graphics\Material.cpp">
+      <Filter>src\core\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\graphics\Mesh.cpp">
+      <Filter>src\core\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\graphics\Renderer.cpp">
+      <Filter>src\core\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\helper\errorhelper.cpp">
+      <Filter>src\core\helper</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\internals\app\Application.cpp">
+      <Filter>src\core\internals\app</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\internals\app\EventHandler.cpp">
+      <Filter>src\core\internals\app</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\internals\app\ImGuiInterface.cpp">
+      <Filter>src\core\internals\app</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\internals\assets\AssetManager.cpp">
+      <Filter>src\core\internals\assets</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\vector\Vector2.cpp">
+      <Filter>src\core\vector</Filter>
+    </ClCompile>
+    <ClCompile Include="src\thirdparty\stb_image_impl.cpp">
+      <Filter>src\thirdparty</Filter>
+    </ClCompile>
+    <ClCompile Include="third-party\dear_imgui\backends\imgui_impl_glfw.cpp">
+      <Filter>third-party\dear_imgui\backends</Filter>
+    </ClCompile>
+    <ClCompile Include="third-party\dear_imgui\backends\imgui_impl_opengl3.cpp">
+      <Filter>third-party\dear_imgui\backends</Filter>
+    </ClCompile>
+    <ClCompile Include="third-party\dear_imgui\imgui.cpp">
+      <Filter>third-party\dear_imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="third-party\dear_imgui\imgui_demo.cpp">
+      <Filter>third-party\dear_imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="third-party\dear_imgui\imgui_draw.cpp">
+      <Filter>third-party\dear_imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="third-party\dear_imgui\imgui_tables.cpp">
+      <Filter>third-party\dear_imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="third-party\dear_imgui\imgui_widgets.cpp">
+      <Filter>third-party\dear_imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="third-party\dear_imgui\misc\cpp\imgui_stdlib.cpp">
+      <Filter>third-party\dear_imgui\misc\cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="third-party\glad\src\glad.c">
+      <Filter>third-party\glad\src</Filter>
+    </ClCompile>
+    <ClCompile Include="third-party\glm\glm\glm\detail\glm.cpp">
+      <Filter>third-party\glm\glm\glm\detail</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\ecs\Components.cpp" />
+    <ClCompile Include="src\core\internals\app\Window.cpp" />
+    <ClCompile Include="src\core\internals\input\input.cpp" />
+    <ClCompile Include="src\core\graphics\DeferredRenderer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="shaders\skybox.vert" />
+    <None Include="shaders\skybox.frag" />
+    <None Include="shaders\deferred\gbufferin.frag" />
+    <None Include="shaders\deferred\dflighting.frag" />
+  </ItemGroup>
+</Project>
