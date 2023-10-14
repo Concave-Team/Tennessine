@@ -1,0 +1,6 @@
+[submodule "third-party/assimp"]
+	path = third-party/assimp
+	url = https://github.com/assimp/assimp/tree/master
+[submodule "third-party/dear_imgui"]
+	path = third-party/dear_imgui
+	url = https://github.com/ocornut/imgui
