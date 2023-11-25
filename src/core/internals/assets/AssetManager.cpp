@@ -132,7 +132,7 @@ Asset AssetManager::LoadAsset(std::string path, bool autoType, AssetType ty)
         }
         else
         {
-            std::cout << "Could not open file, missing or invalid.";
+            std::cout << "Could not open file, missing or invalid. (" << path << ").";
         }
 
         readFile.close();

@@ -2,8 +2,8 @@
 
 Material Material::LoadDefaultMaterial()
 {
-	Asset FragmentShader = AssetManager::LoadAsset("shaders/deferred/dflighting.frag");
-	Asset VertexShader = AssetManager::LoadAsset("shaders/lighting.vert");
+	Asset FragmentShader = AssetManager::LoadAsset("shaders/deferred/gbufferin.frag");
+	Asset VertexShader = AssetManager::LoadAsset("shaders/deferred/gbufferin.vert");
 
 	if (FragmentShader.data == "error")
 	{
@@ -63,5 +63,9 @@ void Material::Update()
 		this->MaterialShader.SetBool("Material.Textured", false);
 	}*/
 
-	this->MaterialShader.SetVec3("viewPos", this->ViewPosition);
+	glActiveTexture(GL_TEXTURE4);
+	glBindTexture(GL_TEXTURE_2D, this->AlbedoTexture);
+	this->MaterialShader.SetInt("texture_diffuse1", 4);
+	
+	//this->MaterialShader.SetVec3("viewPos", this->ViewPosition);
 }

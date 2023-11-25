@@ -191,5 +191,7 @@
     <None Include="shaders\skybox.frag" />
     <None Include="shaders\deferred\gbufferin.frag" />
     <None Include="shaders\deferred\dflighting.frag" />
+    <None Include="shaders\deferred\gbufferin.vert" />
+    <None Include="shaders\deferred\dflighting.vert" />
   </ItemGroup>
 </Project>

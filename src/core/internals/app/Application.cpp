@@ -69,7 +69,7 @@ void Application::Run()
 	renderer.BindVBO(ViewVBO);
 
 	ShaderProgram prog = renderer.CreateProgram(renderer.CreateShader(AssetManager::LoadAsset("shaders/main/editor/view.frag").data, ShaderType::FRAGMENT), renderer.CreateShader(AssetManager::LoadAsset("shaders/main/editor/view.vert").data, ShaderType::VERTEX));
-	ShaderProgram gbuf = renderer.CreateProgram(renderer.CreateShader(AssetManager::LoadAsset("shaders/deferred/gbufferin.frag").data, ShaderType::FRAGMENT), renderer.CreateShader(AssetManager::LoadAsset("shaders/lighting.vert").data, ShaderType::VERTEX));
+	ShaderProgram df = renderer.CreateProgram(renderer.CreateShader(AssetManager::LoadAsset("shaders/deferred/dflighting.frag").data, ShaderType::FRAGMENT), renderer.CreateShader(AssetManager::LoadAsset("shaders/deferred/dflighting.vert").data, ShaderType::VERTEX));
 
 	float quadVertices[] = {
 		// positions   // texCoords
@@ -162,6 +162,7 @@ void Application::Run()
 				else
 				{
 					glBindFramebuffer(GL_FRAMEBUFFER, renderer.gBuffer);
+					renderer.Clear();
 					for (int i = 0; i < mshr->Meshes.size(); i++)
 					{
 						Mesh m = mshr->Meshes[i];
@@ -177,32 +178,32 @@ void Application::Run()
 						
 						renderer.CurrentShader = mtl.MaterialShader;
 
+						mtl.MaterialShader.Use();
+
 						renderer.RenderMesh(m, CalculateTransformMatrix(trnf));
-
-						glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-
-						mtl.Update();
-
-						mtl.MaterialShader.Use();
-						mtl.MaterialShader.SetInt("gPosition", 0);
-						mtl.MaterialShader.SetInt("gNormal", 1);
-						mtl.MaterialShader.SetInt("gAlbedoSpec", 2);
-						
-						mtl.MaterialShader.Use();
-						glActiveTexture(GL_TEXTURE0);
-						glBindTexture(GL_TEXTURE_2D, renderer.gPos);
-						glActiveTexture(GL_TEXTURE1);
-						glBindTexture(GL_TEXTURE_2D, renderer.gNorm);
-						glActiveTexture(GL_TEXTURE2);
-						glBindTexture(GL_TEXTURE_2D, renderer.gColorSpec);
-
-						for (unsigned int i = 0; i < lightPositions.size(); i++)
-						{
-							mtl.MaterialShader.SetVec3("lights[" + std::to_string(i) + "].Position", lightPositions[i]);
-							mtl.MaterialShader.SetVec3("lights[" + std::to_string(i) + "].Color", lightColors[i]);
-						}
 					}
 
+					glBindFramebuffer(GL_FRAMEBUFFER, 0);
+					renderer.Clear();
+					df.Use();
+
+
+					glActiveTexture(GL_TEXTURE0);
+					glBindTexture(GL_TEXTURE_2D, renderer.gPos);
+					glActiveTexture(GL_TEXTURE1);
+					glBindTexture(GL_TEXTURE_2D, renderer.gNorm);
+					glActiveTexture(GL_TEXTURE2);
+					glBindTexture(GL_TEXTURE_2D, renderer.gColorSpec);
+
+					
+
+					for (unsigned int i = 0; i < lightPositions.size(); i++)
+					{
+						df.SetVec3("lights[" + std::to_string(i) + "].Position", lightPositions[i]);
+						df.SetVec3("lights[" + std::to_string(i) + "].Color", lightColors[i]);
+					}
+
+					df.SetVec3("viewPos", renderer.Position);
 
 					prog.Use();
 					renderQuad();
